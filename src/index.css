@@ -1,0 +1,66 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+@layer base {
+  :root {
+    --bg-main: #090909;
+    --bg-secondary: #151515;
+    --bg-card: #1C1C1C;
+    --accent-red: #E50914;
+    --accent-gold: #D4AF37;
+    --text-main: #FFFFFF;
+    --text-muted: #A5A5A5;
+  }
+
+  body {
+    background-color: #090909;
+    color: #FFFFFF;
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  h1, h2, h3, h4, h5, h6, .font-display {
+    font-family: 'Outfit', 'Plus Jakarta Sans', system-ui, sans-serif;
+    letter-spacing: -0.02em;
+  }
+}
+
+/* Custom Sleek Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #090909;
+}
+::-webkit-scrollbar-thumb {
+  background: #27272a;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #3f3f46;
+}
+
+/* Hide scrollbar for carousel while retaining touch scroll */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Red glow effects */
+.glow-red {
+  box-shadow: 0 0 25px -5px rgba(229, 9, 20, 0.35);
+}
+.glow-red-lg {
+  box-shadow: 0 0 40px -5px rgba(229, 9, 20, 0.45);
+}
+.glow-gold {
+  box-shadow: 0 0 25px -5px rgba(212, 175, 55, 0.3);
+}

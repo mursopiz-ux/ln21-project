@@ -1,0 +1,6 @@
+{
+  "name": "Layar Nusantara 21 (LN21)",
+  "description": "Platform streaming film independen & sinema Nusantara dengan pengalaman visual sinematik premium, katalog film nasional, indie internasional, film pendek, dan dokumenter.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
